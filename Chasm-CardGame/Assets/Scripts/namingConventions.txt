@@ -1,0 +1,8 @@
+Full Names (internal) = Camel Case (eg - camelCase)
+Full Names (classes, interfaces, structs, delegates) = Pascal Case (eg - PascalCase)
+Player items = 'p' (eg - pItem or pHealth)
+Enemy items = 'e' (eg - eItem or eHealth)
+Main items = 'm' (eg - mField or mPoints)
+UI elements = 'u' (uMenu - uSettings)
+gameManager elements instances, etc: '_' (eg - _deck or _gamewin)
+
