@@ -7,10 +7,9 @@ public class gameManager : MonoBehaviour
 {
 
 
-    [SerializeField] GameObject _deck;
+    [SerializeField] Transform _deck;
 
-    Stack<GameObject> mDeck;
-    GameObject[] mCards;
+    private List<GameObject> mDeck;
     
 
     // Start is called before the first frame update
@@ -26,18 +25,23 @@ public class gameManager : MonoBehaviour
     }
 
     void LoadCards()
-    { }
+    {
+        foreach (Transform child in _deck)
+        {
+            mDeck.Add(child.gameObject);
+        }
+    }
     
     void Shuffle()
     {
         int rand_index;
         GameObject temp;
-        for (int lastIndex = mDeck.Count - 1; lastIndex > 0; --lastIndex)
+        for (int lastIndex = mDeck.Count; lastIndex > 0; --lastIndex)
         {
-            rand_index = Random.Range(0, lastIndex);
-            temp = mCards[lastIndex];
-            mCards[lastIndex] = mCards[rand_index];
-            mCards[rand_index] = temp;
+            rand_index = Random.Range(0, lastIndex + 1);
+            temp = mDeck[lastIndex];
+            mDeck[lastIndex] = mDeck[rand_index];
+            mDeck[rand_index] = temp;
         }
     }
 }
