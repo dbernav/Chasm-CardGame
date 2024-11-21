@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|c:\\users\\ndber\\desktop\\personalprojects\\chasm-cardgame\\chasm-cardgame\\assets\\scripts\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|c:\\users\\ndber\\desktop\\personalprojects\\chasm-cardgame\\chasm-cardgame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Entity.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entity.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Entity.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T19:32:44.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "gameManager.cs",
               "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\gameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gameManager.cs",
               "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\gameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\gameManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T18:25:52.516Z",
               "EditorCaption": ""
