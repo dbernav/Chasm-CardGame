@@ -1,54 +1,78 @@
 using System.Collections;
 using System.Collections.Generic;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class gameManager : MonoBehaviour
 {
 
-    public static gameManager instance;
 
-    [SerializeField] Transform _deck; //internal deck - used to load and shuffle deck
+    private static gameManager _instance;
+    public static gameManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                Debug.Assert(false, "gameManager is NULL");
+            }
+            return _instance;
+        }
+    }
 
-    private List<GameObject> mDeck; //main deck
+    private void Awake()
+    {
+        _instance = this;
+    }
 
-    private int pScore, eScore;
+    
+    [SerializeField] Transform playerHand;
+    public Transform GetPlayerHand() { return playerHand; }
+
+    [SerializeField] Transform opponentHand;
+
     
 
+    private List<GameObject> mFieldPile;
+
+    public int pScore, eScore, eHandCount = 0;
+
+    public int pHandCount = 0;
+
+   // List<GameObject> topCard = null;
+    //GameObject currCard = null;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
+       // DeckManager.LoadCards();
+
     }
 
-    // Update is called once per frame
+    // Update is called once per frame 
     void Update()
     {
-        
-    }
-
-    void LoadCards()
-    {
-        foreach (Transform child in _deck) //grabs children to populate deck array to shuffle
+        //topCard.transform.position = Vector2.Lerp(topCard.transform.position, playerHand.transform.position, 0.3f);
+        //Debug.Log("card moving to hand");
+        if (pHandCount== 0 && DeckManager.Instance.DeckInitialized())
         {
-            mDeck.Add(child.gameObject);
-        }
-    }
-    
-    void Shuffle() //Fisher-Yates/Knuth Shuffling Algorithm 
-    {
-        int rand_index;
-        GameObject temp;
-        for (int lastIndex = mDeck.Count - 1; lastIndex > 0; --lastIndex)
-        {
-            rand_index = Random.Range(0, lastIndex); 
-            temp = mDeck[lastIndex];
-            mDeck[lastIndex] = mDeck[rand_index];
-            mDeck[rand_index] = temp;
+            Debug.Log("Player Hand is Empty");
+            EventManager.HandIsEmpty(true);
         }
     }
 
-    void Deal()
+   
+
+   
+
+    void updateHandCount()
+    {
+
+    }
+
+    void Pop(GameObject input)
     { }
 
     public void updateGameGoal()
@@ -64,7 +88,7 @@ public class gameManager : MonoBehaviour
     }
     void updatePoints()
     {
-        //
+       
     }
 
     void Discard()

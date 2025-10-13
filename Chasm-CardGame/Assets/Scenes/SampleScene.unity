@@ -652,6 +652,121 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144244142}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &312617323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312617326}
+  - component: {fileID: 312617325}
+  - component: {fileID: 312617324}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &312617324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312617323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &312617325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312617323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &312617326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312617323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &335364148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335364149}
+  - component: {fileID: 335364150}
+  m_Layer: 0
+  m_Name: deckManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &335364149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335364148}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.6224713, y: 9.019279, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1747137572}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335364150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335364148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e576649918e74489454f45e4343df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PLAYER_1: {fileID: 1260149126}
+  PLAYER_2: {fileID: 1230432257}
+  _deckCount: 52
 --- !u!1 &343495412
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,6 +990,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -956,6 +1072,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0bb7095ad38dd444a6eab9b9b75438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &805462783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230432258}
   - component: {fileID: 1230432259}
+  - component: {fileID: 1230432260}
   m_Layer: 0
   m_Name: P2
   m_TagString: Untagged
@@ -1430,6 +1559,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1230432260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230432257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43301719c8e929479b44fd89a79576a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1260149126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +1581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260149127}
   - component: {fileID: 1260149128}
+  - component: {fileID: 1260149129}
   m_Layer: 0
   m_Name: P1
   m_TagString: Untagged
@@ -1520,6 +1662,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1260149129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260149126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43301719c8e929479b44fd89a79576a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1271834209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,7 +1705,6 @@ Transform:
   m_Children:
   - {fileID: 1218403560}
   - {fileID: 1409121275}
-  - {fileID: 1756035828}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409121274
@@ -1810,6 +1963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516839918}
+  - component: {fileID: 1516839919}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -1832,6 +1986,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1747137572}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1516839919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516839917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40224a2c6a5e6f14ea09a0913f899522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHand: {fileID: 1260149127}
+  opponentHand: {fileID: 1230432258}
+  pScore: 0
+  eScore: 0
+  eHandCount: 0
+  pHandCount: 0
 --- !u!1 &1713508675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,13 +2140,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1516839918}
+  - {fileID: 335364149}
   m_Father: {fileID: 1044505791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1756035828 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-  m_PrefabInstance: {fileID: 7082203074101184727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1793096248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,6 +2364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1930462305}
+  - component: {fileID: 1930462306}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -2218,6 +2387,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1044505791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1930462306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930462304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43beca7cd7ebb324eb2a4dc082c5b4c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2114487598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,279 +2505,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114487598}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &7082203074101184727
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1271834210}
-    m_Modifications:
-    - target: {fileID: 72071542238912197, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 374813150679281179, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 429478356171726070, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 824144324712924912, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 861704553978575675, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028090390039302143, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134878640251574631, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544987567010516049, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554681378979822764, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 1566105314352866666, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 1984143735085664914, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 2091007683952647434, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 2154117369458670636, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Joker
-      objectReference: {fileID: 0}
-    - target: {fileID: 2293922994917126593, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 2365746911012999342, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 2498723156413200732, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 2669774192475693553, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 2679955420064441619, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 2756820635131398736, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 2795652338415194054, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 3042240435916779534, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 3059183294951762659, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126466544580709174, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296476302857093981, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659953959512883277, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888138506476121748, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041484799659493444, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172301964289331267, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 4224790534002421542, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297880072140354071, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529604357512302861, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645455116843329810, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 4874169517898229307, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905345212043982179, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017824908586712686, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 5044391575016059030, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 5113664513293563402, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 5202008082128503477, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Platinum
-      objectReference: {fileID: 0}
-    - target: {fileID: 5609718105673635543, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024412794979256659, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 6237665331272306474, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282782821850224986, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469254613844312986, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555217216082501342, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 7582382897152726559, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 7983245265705348888, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 8051104375327253596, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 8054475089093208128, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080108251725895167, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 8177571358587365689, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 8288988529374794350, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Clubs
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8289652295240892881, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614807198390878332, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Hearts
-      objectReference: {fileID: 0}
-    - target: {fileID: 8698245798182824870, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_Name
-      value: Deck
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085281592200692211, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Diamonds
-      objectReference: {fileID: 0}
-    - target: {fileID: 9112933872638826367, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
-      propertyPath: m_TagString
-      value: Spades
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1f26fcb4016a0f144bf239a4e8290f64, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2604,3 +2512,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1044505791}
   - {fileID: 1271834210}
+  - {fileID: 312617326}

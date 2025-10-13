@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|c:\\users\\ndber\\desktop\\personalprojects\\chasm-cardgame\\chasm-cardgame\\assets\\scripts\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|c:\\users\\ndber\\desktop\\personalprojects\\chasm-cardgame\\chasm-cardgame\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\namingconventions.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\namingconventions.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|c:\\users\\ndber\\desktop\\personalprojects\\chasm-cardgame\\chasm-cardgame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\assets\\scripts\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\CardDisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765337DA-D840-E075-B01F-9D6061C22079}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\CardDisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +50,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "namingConventions.txt",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\namingConventions.txt",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\namingConventions.txt",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\namingConventions.txt",
+              "RelativeToolTip": "Assets\\Scripts\\namingConventions.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-06T17:39:35.867Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -30,29 +75,113 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Entity.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entity.cs",
-              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Entity.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PlayerManager.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\PlayerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\PlayerManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T19:32:44.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T15:22:22.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Card.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Card.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Card.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:56:17.393Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T00:48:08.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DeckManager.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\DeckManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DeckManager.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\DeckManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DeckManager.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAADwv0UAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T21:12:41.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "gameManager.cs",
               "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\gameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gameManager.cs",
               "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\gameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\gameManager.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwDgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T18:25:52.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T18:25:52.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventManager.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\EventManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EventManager.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\EventManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EventManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T01:00:50.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UI.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\UI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\UI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T00:51:38.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Entity.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entity.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\Entity.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entity.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T19:32:44.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CardDisplay.cs",
+              "DocumentMoniker": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\CardDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardDisplay.cs",
+              "ToolTip": "C:\\Users\\ndber\\Desktop\\PersonalProjects\\Chasm-CardGame\\Chasm-CardGame\\Assets\\Scripts\\CardDisplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardDisplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T01:46:55.851Z"
             }
           ]
         }
