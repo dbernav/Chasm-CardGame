@@ -7,6 +7,11 @@ using UnityEngine.UIElements;
 public class gameManager : MonoBehaviour
 {
 
+    [SerializeField] GameObject PLAYER_1;
+    [SerializeField] GameObject PLAYER_2;
+    private Player p1, p2;
+
+    Card testCard;
 
     private static gameManager _instance;
     public static gameManager Instance
@@ -24,6 +29,8 @@ public class gameManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        p1 = PLAYER_1.GetComponent<Player>();
+        p2 = PLAYER_2.GetComponent<Player>();
     }
 
     
@@ -46,8 +53,9 @@ public class gameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-       // DeckManager.LoadCards();
+
+        // DeckManager.LoadCards();
+        
 
     }
 
@@ -59,18 +67,12 @@ public class gameManager : MonoBehaviour
         if (pHandCount== 0 && DeckManager.Instance.DeckInitialized())
         {
             Debug.Log("Player Hand is Empty");
-            EventManager.HandIsEmpty(true);
+            EventManager.HandIsEmpty(p1.handIsEmpty);
         }
+        //else if (pHandCount )
+       
     }
 
-   
-
-   
-
-    void updateHandCount()
-    {
-
-    }
 
     void Pop(GameObject input)
     { }

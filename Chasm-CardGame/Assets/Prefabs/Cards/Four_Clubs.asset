@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47deece2f8116043a8f732a2c1b5606, type: 3}
+  m_Name: Four_Clubs
+  m_EditorClassIdentifier: 
+  _card: {fileID: 0}
+  _suit: 2
+  _rank: 4
+  _img: {fileID: -127823347, guid: dbefad52d97a06d46a032ba07135b210, type: 3}

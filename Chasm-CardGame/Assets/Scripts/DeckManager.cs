@@ -29,6 +29,7 @@ public class DeckManager : MonoBehaviour
 
     [SerializeField] GameObject PLAYER_1; // USER
     [SerializeField] GameObject PLAYER_2; // PLAYER 2 - AI OPPONENT
+    [SerializeField] GameObject _card;
 
     
 
@@ -104,23 +105,25 @@ public class DeckManager : MonoBehaviour
 
         Player p1 = PLAYER_1.GetComponent<Player>();
         Player p2 = PLAYER_2.GetComponent<Player>();
-
+        GameObject pCard;
         Card card = TakeCard();
         // how do we transfer ownership of the card from the deck manager to the players?
+            
 
-
-        for (int i = 0; i < p1.Count; ++i)
+        for (int i = 0; i < 6; ++i)
         {
             p1.AddToHand(card);
             Debug.Log("Player 1 Hand Count: " + p1.Count);
+            pCard = Instantiate(_card, p1.transform.GetChild(i).position, p1.transform.GetChild(i).rotation);
+            p1.UpdateHandCount();
             
         }
-        for (int i = 0; i < p2.Count; ++i)
+        for (int i = 0; i < 6; ++i)
         {
             p2.AddToHand(card);
             Debug.Log("Player 2 Hand Count: " + p2.Count);
+            pCard = Instantiate(_card, p2.transform.GetChild(i).position, p2.transform.GetChild(i).rotation);
+            p1.UpdateHandCount();
         }
-
-
     }
 }
