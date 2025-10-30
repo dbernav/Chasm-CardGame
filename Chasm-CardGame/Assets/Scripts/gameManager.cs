@@ -4,12 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
+//TO DO:
+//PickTwoCards(Collider2D hit2D)
+//PlayOneCard(Collider2D hit2D)
+//What happens when player hand hits zero after game start? Change dealing logic to indicate game start and then listen for playerHand = 0 to implement new condition.
 public class gameManager : MonoBehaviour
 {
-
     [SerializeField] GameObject PLAYER_1;
     [SerializeField] GameObject PLAYER_2;
-    private Player p1, p2;
+    [SerializeField] Hand Field;
+    [SerializeField] ScoringHand playerScoringHand;
+    [SerializeField] ScoringHand oppScoringHand;
+    private Hand p1, p2;
 
     Card testCard;
 
@@ -29,61 +36,27 @@ public class gameManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-        p1 = PLAYER_1.GetComponent<Player>();
-        p2 = PLAYER_2.GetComponent<Player>();
-    }
+        p1 = PLAYER_1.GetComponent<Hand>();
+        p2 = PLAYER_2.GetComponent<Hand>();
 
-    
-    [SerializeField] Transform playerHand;
-    public Transform GetPlayerHand() { return playerHand; }
-
-    [SerializeField] Transform opponentHand;
-
-    
-
-    private List<GameObject> mFieldPile;
-
-    public int pScore, eScore, eHandCount = 0;
-
-    public int pHandCount = 0;
-
-   // List<GameObject> topCard = null;
-    //GameObject currCard = null;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        // DeckManager.LoadCards();
-        
-
+        p1.SetHandEmpty(true);
+        p2.SetHandEmpty(true);
+        Field.SetHandEmpty(true);
     }
 
     // Update is called once per frame 
     void Update()
     {
-        //topCard.transform.position = Vector2.Lerp(topCard.transform.position, playerHand.transform.position, 0.3f);
-        //Debug.Log("card moving to hand");
-        if (pHandCount== 0 && DeckManager.Instance.DeckInitialized())
-        {
-            Debug.Log("Player Hand is Empty");
-            EventManager.HandIsEmpty(p1.handIsEmpty);
-        }
-        //else if (pHandCount )
        
     }
 
-
-    void Pop(GameObject input)
-    { }
-
     public void updateGameGoal()
     {
-        if (pScore == 20)
+        if (playerScoringHand.GetScore() == 20)
         {
             Debug.Log("You Win!");
         }
-        else if (eScore == 20)
+        else if (oppScoringHand.GetScore() == 20)
         {
             Debug.Log("You Lose!");
         }

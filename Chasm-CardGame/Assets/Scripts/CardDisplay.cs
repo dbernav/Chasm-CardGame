@@ -9,21 +9,25 @@ public class CardDisplay : MonoBehaviour
 {
 
     [SerializeField] Transform _front;
+    [SerializeField] Sprite img;
     //Card currCard;
 
     private void Update()
     {
-        if (_front != null)
+        if(_front != null && img != null)
         {
-            DisplayCard(_front.GetComponent<SpriteRenderer>().sprite);
-        }
-        else
-        {
-            Debug.LogError("Card is null");
+            DisplayCard();
         }
     }
 
-    public void DisplayCard(Sprite img)
+    public void Initialize(Card card)
+    {
+        img = card.img;
+        _front = this.transform.GetChild(0);
+        Debug.Log("CardDisplay initialized with card: " + card._suit + " " + card._rank);
+    }
+
+    public void DisplayCard()
     {
         _front.GetComponent<SpriteRenderer>().sprite = img;
     }

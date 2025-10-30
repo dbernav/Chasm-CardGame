@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private List<Card> playerHand = new List<Card>();
-    public bool handIsEmpty = true; // will be false until hand initialized in final build
-
-    public int Count { get { return playerHand.Count; } }
-
+   
     public void Update()
     {
         if (Input.GetKeyUp(KeyCode.Space))
@@ -18,29 +14,14 @@ public class Player : MonoBehaviour
 
         }
     }
-    public void AddToHand(Card card)
-    {
-        playerHand.Add(card);
-    }
-
-    public Player()
-    {
-        playerHand = new List<Card>();
-    }
-
-    public void UpdateHandCount()
-    {
-        if (playerHand.Count == 6) { handIsEmpty = false; }
-    }
-
     public void playCard()
     {
         Debug.Log("Playing Card...");
-        Card card = playerHand[0];
-        if (card == null) { Debug.Log("No card to play!"); }
-        Debug.Log(string.Format("Card_{0}_{1} played.", card.suit, card.rank));
+        // listen for click on player card
+        // if player click 2nd (field) card, delete both cards (player hand, field)
+        // if player has no suitable card to pick, play from player hand to field
         //return card; playing the card is one thing, but the logic im trying to work with right now isn't the correct one.
-                     //let's get to the point where pressing space shows the card, and then let's work on dealing cards face up to each player's hand/
+        //let's get to the point where pressing space shows the card, and then let's work on dealing cards face up to each player's hand/
     }
 }
 

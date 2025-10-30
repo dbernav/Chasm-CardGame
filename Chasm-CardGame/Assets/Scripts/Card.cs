@@ -13,5 +13,7 @@ public class Card : ScriptableObject
 
     public SuitEnum suit { get{ return _suit; } }
     public int rank { get { return _rank; } }
+    public Sprite img { get { return _img; } }
+    public string getImgName { get { return _img.name; } } 
 
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.XR;
+
+// what happens when deck is empty?
 public enum SuitEnum
 {
     Hearts = 1,
@@ -30,8 +32,9 @@ public class DeckManager : MonoBehaviour
     [SerializeField] GameObject PLAYER_1; // USER
     [SerializeField] GameObject PLAYER_2; // PLAYER 2 - AI OPPONENT
     [SerializeField] GameObject _card;
-
-    
+    [SerializeField] GameObject _mainZone;
+    [SerializeField] Card[] _deck;
+     
 
     public int _deckCount = 52;
     private List<Card> mDeck = new List<Card>();
@@ -51,14 +54,11 @@ public class DeckManager : MonoBehaviour
 
     public void InitializeDeck()
     {
-        for (int suit = 1; suit <= 4; ++suit)
+        foreach(Card card in _deck)
         {
-            for (int rank = 1; rank <= 13; ++rank)
+            if (card != null)
             {
-                Card card = ScriptableObject.CreateInstance<Card>();  
-                card._suit = (SuitEnum)suit;
-                card._rank = rank;
-                mDeck.Add(card); //((SuitEnum)suit, rank, Vector3.zero, Quaternion.identity)));
+                mDeck.Add(card);
             }
         }
         Debug.Log("Deck Initialized with " + mDeck.Count + " cards.");  
@@ -80,7 +80,7 @@ public class DeckManager : MonoBehaviour
 
     public Card TakeCard()
     {
-        //if (mDeck.Count == 0) {Debug.Log("mDeck Count: " + mDeck.Count); return null; }
+        if (mDeck.Count == 0) {Debug.Log("deck is empty" + mDeck.Count); return null; }
         Debug.Log("mDeck Count: " + mDeck.Count);
         Card card = mDeck[0];
         mDeck.RemoveAt(0);
@@ -92,38 +92,86 @@ public class DeckManager : MonoBehaviour
     void OnEnable()
     {
         EventManager.onHandCountEmpty += Deal;
+        EventManager.onMainFieldEmpty += populateField;
     }
 
     void OnDisable()
     {
         EventManager.onHandCountEmpty -= Deal;
+        EventManager.onMainFieldEmpty -= populateField;
     }
 
     public void Deal()
     {
         Debug.Log("Dealing Cards");
 
-        Player p1 = PLAYER_1.GetComponent<Player>();
-        Player p2 = PLAYER_2.GetComponent<Player>();
+        Hand p1 = PLAYER_1.GetComponent<Hand>();
+        Hand p2 = PLAYER_2.GetComponent<Hand>();
         GameObject pCard;
-        Card card = TakeCard();
-        // how do we transfer ownership of the card from the deck manager to the players?
-            
+        Card card;
 
-        for (int i = 0; i < 6; ++i)
+        Debug.Log("Entering loop");
+
+        for (int i = 0; i < p1.HandSize; ++i)
         {
-            p1.AddToHand(card);
-            Debug.Log("Player 1 Hand Count: " + p1.Count);
-            pCard = Instantiate(_card, p1.transform.GetChild(i).position, p1.transform.GetChild(i).rotation);
-            p1.UpdateHandCount();
-            
+            Debug.Log("Dealing to Player 1, card " + (i + 1));
+            card = TakeCard();
+            if (card != null)
+            {
+                p1.AddToHand(card);
+                Debug.Log("Player 1 Hand Count: " + p1.Count);
+                pCard = Instantiate(_card, p1.transform.GetChild(i).position, p1.transform.GetChild(i).rotation);
+                pCard.transform.SetParent(p1.transform.GetChild(i));
+                pCard.GetComponent<CardDisplay>().Initialize(card);
+                p1.UpdateHandCount();
+            }
+            else
+            {
+                break;
+            }
         }
-        for (int i = 0; i < 6; ++i)
+        for (int i = 0; i < p2.HandSize; ++i) //for prototyping - will be hidden in final build
         {
-            p2.AddToHand(card);
-            Debug.Log("Player 2 Hand Count: " + p2.Count);
-            pCard = Instantiate(_card, p2.transform.GetChild(i).position, p2.transform.GetChild(i).rotation);
-            p1.UpdateHandCount();
+            Debug.Log("Dealing to Player 2, card " + (i + 1));
+            card = TakeCard();
+            if (card != null)
+            {
+                p2.AddToHand(card);
+                Debug.Log("Player 2 Hand Count: " + p2.Count);
+                pCard = Instantiate(_card, p2.transform.GetChild(i).position, p2.transform.GetChild(i).rotation);
+                pCard.transform.SetParent(p2.transform.GetChild(i));
+                pCard.GetComponent<CardDisplay>().Initialize(card);
+                p2.UpdateHandCount();
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        Debug.Log("Exiting loop");
+    }
+    
+    private void populateField()
+    {
+        Hand mainZone = _mainZone.GetComponent<Hand>();
+        GameObject pCard;
+        Card card;
+       
+        for (int i = 0; i < mainZone.HandSize; ++i)
+        {
+            card = TakeCard();
+            if (card != null)
+            {
+                mainZone.AddToHand(card);
+                Debug.Log("Card is " + card.suit + " " + card.rank);
+                Debug.Log("Player 1 Hand Count: " + mainZone.Count);
+                pCard = Instantiate(_card, mainZone.transform.GetChild(i).position, mainZone.transform.GetChild(i).rotation);
+                pCard.transform.SetParent(mainZone.transform.GetChild(i));
+                pCard.GetComponent<CardDisplay>().Initialize(card);
+                mainZone.UpdateHandCount();
+            }
+            else { break; }
         }
     }
 }

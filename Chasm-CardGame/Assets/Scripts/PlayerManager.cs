@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     private List<Card> playerHand = new List<Card>();
-    private List<Transform> playerTransform = new List<Transform>(); 
+    private List<Transform> playerTransform = new List<Transform>();
 
     public int Count { get { return playerHand.Count; } }
 
@@ -15,8 +15,5 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    public PlayerManager()
-    {
-        playerHand = new List<Card>();
-    }
+    
 }

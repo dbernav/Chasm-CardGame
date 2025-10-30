@@ -1,6 +1,13 @@
 #---Folders---
-Library/
+[Ll]ibrary/
 .vs/
 .vsconfig/
-Logs/
-Packages/
+[Ll]ogs/
+[Pp]ackages/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+*.csproj
+*.sln
+*.user
